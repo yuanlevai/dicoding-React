@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        /* pseudo class selector */
+        /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+        a:link {
+        color: red;
+        }
+        
+        /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+        a:visited {
+        color: green;
+        }
+        
+        /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+        a:hover {
+        color: pink;
+        }
+
+        /* pseudo element selector */
+        blockquote::before,
+        blockquote::after {
+        content: '"';
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="www.google.com">google.com</a>
+
+    <br>
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit sed voluptates. Aliquam aspernatur autem est nobis officia praesentium quas recusandae rem.</blockquote>
+</body>
+</html>
