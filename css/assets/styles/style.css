@@ -5,14 +5,26 @@ body {
 
 } 
 
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+}
+
 nav a {
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
+    color: white;
 }
 
 nav a:hover {
     font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
 }
 
 h2, h3 {
@@ -42,4 +54,22 @@ footer {
 /* mengatur logo */
 .profile img {
     width: 200px;
+}
+
+/* membuat card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Menerapkan Jumbotron dan Navigasi pada header */
+.jumbotron {
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+
 }
