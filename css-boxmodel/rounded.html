@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border radius</title>
+    <style>
+         .box {
+            width: 50%;
+            border: 4px solid darkblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .rounded {
+            border-radius: 10px;
+
+            /* menrapkan tiap siku menggunakan property yang terpisah */
+            
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 10px;
+
+            /* menggunakan sorthand */
+            border-radius: 10px 15px 10px 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit doloremque commodi totam ea dicta nam odit autem ipsum omnis error odio veniam architecto maxime exercitationem, perspiciatis debitis vero obcaecati rem.</p>
+    </div>
+    <div class="box rounded">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ipsa nam, fugit modi quia ea voluptate repudiandae officiis magnam aliquam perferendis possimus nemo et, impedit molestias. Perferendis ullam obcaecati officiis.</p>
+    </div>
+</body>
+</html>
